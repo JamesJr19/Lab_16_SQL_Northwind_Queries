@@ -1,0 +1,68 @@
+--1.
+--SELECT * FROM Customers
+
+--2.
+--SELECT Country FROM Customers
+
+--3.
+--SELECT * FROM Customers WHERE CustomerID LIKE 'BL%'
+
+--4.
+--SELECT TOP 100 * FROM Orders 
+
+--5.
+--SELECT * FROM Customers
+--WHERE PostalCode = '1010'
+--OR PostalCode = '3012' 
+--OR PostalCode = '12209' 
+--OR PostalCode = '05023'
+
+--6.
+--SELECT * FROM Orders WHERE ShipRegion <> 'NULL'
+
+--7.
+--SELECT * FROM Customers ORDER BY Country
+--SELECT * FROM Customers ORDER BY City
+
+--8.
+--INSERT INTO Customers (CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax)
+--VALUES('GAREBEAR','Scary Gary's','Gary Barry','Head of Customer Service','1919 Elm Ave','Gary','IN','46401','USA','2488675309','911911911')
+
+--9.
+--UPDATE Orders SET ShipRegion='EuroZone' WHERE ShipCountry='France';
+
+--10.
+--DELETE FROM [Order Details] WHERE Quantity = 1
+
+--11.
+--SELECT AVG(Quantity) FROM [Order Details]
+
+--SELECT MAX(Quantity) FROM [Order Details]
+
+--SELECT MIN(Quantity) FROM [Order Details]
+
+--12.
+--SELECT AVG(Quantity) FROM [Order Details] GROUP BY OrderID
+
+--SELECT MAX(Quantity) FROM [Order Details] GROUP BY OrderID
+
+--SELECT MIN(Quantity) FROM [Order Details] GROUP BY OrderID
+
+--13.
+--SELECT CustomerID FROM Orders WHERE OrderID = 10290
+
+--14.
+--SELECT * FROM Customers
+--JOIN ORDERS ON Customers.CustomerID = Orders.CustomerID
+
+--SELECT * FROM Customers
+--LEFT JOIN ORDERS ON Customers.CustomerID = Orders.CustomerID
+
+--SELECT * FROM Customers
+--RIGHT JOIN ORDERS ON Customers.CustomerID = Orders.CustomerID
+
+--15.
+--SELECT * FROM Employees WHERE ReportsTo is Null
+
+--16.
+--SELECT FirstName From Employees Where ReportsTo = 2
